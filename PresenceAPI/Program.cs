@@ -9,7 +9,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-string filepath = "C:\\Projects\\PresenceAPI\\PresenceAPI\\DataStore.txt";
+string filepath = "../DataStore.txt";
 File.WriteAllText(filepath, String.Empty);
 
 // Configure the HTTP request pipeline.

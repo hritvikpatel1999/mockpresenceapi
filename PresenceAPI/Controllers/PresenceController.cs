@@ -15,7 +15,7 @@ namespace PresenceAPI.Controllers
         public List<KeyValuePair> Get()
         {
             List<KeyValuePair> result = new List<KeyValuePair>();
-            string filepath = "C:\\Projects\\PresenceAPI\\PresenceAPI\\DataStore.txt";
+            string filepath = "../DataStore.txt";
             using (StreamReader sr = new StreamReader(filepath))
             {
                 string line;
@@ -41,7 +41,7 @@ namespace PresenceAPI.Controllers
         {
             string ans = string.Empty;
             string ap = "'";
-            string filepath = "C:\\Projects\\PresenceAPI\\PresenceAPI\\DataStore.txt";
+            string filepath = "../DataStore.txt";
             using (StreamReader sr = new StreamReader(filepath))
             {
                 string line;
@@ -67,7 +67,7 @@ namespace PresenceAPI.Controllers
             bool isPresent = false;
             try
             {
-                string filepath = "C:\\Projects\\PresenceAPI\\PresenceAPI\\DataStore.txt";
+                string filepath = "../DataStore.txt";
                 string toAdd = ap + obj.Key + ap + ":" + ap + obj.Value + ap;
 
                 using (StreamReader sr = new StreamReader(filepath))
